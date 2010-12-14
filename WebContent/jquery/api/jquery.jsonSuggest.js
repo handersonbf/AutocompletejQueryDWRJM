@@ -1,3 +1,12 @@
+/**
+ * Plugin jquery.jsonsuggest.js
+ * 
+ * Update 2009: Handerson Frota (www.handersonfrota.com.br)
+ * jQuery Plugin issues - http://plugins.jquery.com/node/13261
+ * @param {Object} $
+ * @memberOf {TypeName} 
+ * @return {TypeName} 
+ */
 (function($){$.fn.jsonSuggest=function(searchData,settings){var defaults={minCharacters:1,maxResults:undefined,wildCard:"",caseSensitive:false,notCharacter:"!",maxHeight:350,highlightMatches:true,onSelect:undefined,ajaxResults:false};settings=$.extend(defaults,settings);return this.each(function(){function regexEscape(txt,omit){var specials=['/','.','*','+','?','|','(',')','[',']','{','}','\\'];if(omit){for(var i=0;i<specials.length;i++){if(specials[i]===omit){specials.splice(i,1);}}}
 var escapePatt=new RegExp('(\\'+specials.join('|\\')+')','g');return txt.replace(escapePatt,'\\$1');}
 var obj=$(this),wildCardPatt=new RegExp(regexEscape(settings.wildCard||''),'g'),results=$('<div />'),currentSelection,pageX,pageY;

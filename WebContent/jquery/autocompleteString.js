@@ -1,3 +1,4 @@
+//O DWR usa o $ e para evitar conflito com o jQuery usamos essa sua função.
 var jQuery = jQuery.noConflict();
 
 jQuery(document).ready(function() {
