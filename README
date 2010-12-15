@@ -6,7 +6,14 @@ DWR 3.0 - http://directwebremoting.org
 JQuery  - http://jquery.com/
 Plugin  - jquery.jsonsuggest.js
 Update 2009: jQuery Plugin issues - http://plugins.jquery.com/node/13261
+
 ----------
 http://www.handersonfrota.com.br/artigos-tutoriais/dwr/
 
-
+----------
+/sql
+	-Script MySql para geração do banco, necessário para o exemplo.
+	-MySQL script for generating the bank, required for example.
+	
+	
+by Handerson Frota - www.handersonfrota.com.br / twitter: handersonbf
